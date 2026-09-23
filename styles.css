@@ -52,6 +52,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .button--primary:hover, .button--primary:focus-visible { background: var(--orange-dark); }
 .button--secondary { color: var(--ink); border-color: var(--line); background: var(--white); }
 .button--secondary:hover, .button--secondary:focus-visible { border-color: var(--ink); }
+.button--email { color: var(--ink); border-color: var(--ink); background: var(--white); }
+.button--email:hover, .button--email:focus-visible { color: var(--white); background: var(--ink); }
 .hero__proof { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 42px; color: var(--muted); font-size: .87rem; }
 .hero__proof span { position: relative; padding-left: 16px; }
 .hero__proof span::before { content: ""; position: absolute; left: 0; top: .66em; width: 6px; height: 6px; border-radius: 50%; background: var(--orange); }
@@ -108,7 +110,10 @@ h2 { margin: 0; font-size: clamp(2.15rem, 4vw, 4rem); line-height: 1.05; letter-
 .footer__inner > div:first-child { display: grid; }
 .footer__inner strong { color: var(--white); }
 .footer__legal { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 18px; }
-.floating-whatsapp { position: fixed; right: 18px; bottom: 18px; z-index: 40; padding: 12px 17px; border-radius: 999px; background: #22a95d; color: var(--white); box-shadow: 0 12px 30px rgba(0,0,0,.2); font-weight: 850; }
+.floating-contact { position: fixed; right: 18px; bottom: 18px; z-index: 40; display: grid; justify-items: end; gap: 9px; }
+.floating-contact a { padding: 12px 17px; border-radius: 999px; color: var(--white); box-shadow: 0 12px 30px rgba(0,0,0,.2); font-weight: 850; }
+.floating-whatsapp { background: #22a95d; }
+.floating-email { background: var(--ink); }
 :focus-visible { outline: 3px solid #ffb089; outline-offset: 3px; }
 
 @media (max-width: 960px) {
